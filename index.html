@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- github calendar -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js" ></script>
+    <title>Mayker Miyanaga Portfolio</title>
+</head>
+<body>
+    <div class="top_margin"></div>
+    <header>
+        <div class="profile">
+            <img src="/assets/me.png" alt="Flutter Logo" class="avatar">
+            <div class="developerInfo">
+                <h1 class="title">Mayker Miyanaga</h1>
+                <p class="subtitle">Flutter Developer</p>
+                <div class="socialMedia">
+                    <a href="https://twitter.com/MaykerMiyanaga" target="_blank"><img src="./assets/twitter.png" alt="Twitter" class="socialMedia-img"></a>
+                    <a href="https://www.linkedin.com/in/maykerhm" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn" class="socialMedia-img"></a>
+                    <a href="http://github.com/MaykerHM" target="_blank"><img src="./assets/github.png" alt="Github" class="socialMedia-img"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="column0">
+            <div class="column1">
+                <div class="content" id="aboutMe">
+                    <h2>About Me</h2>
+                    <p>With a mechanical engineering background, solving problems was one of my driving passions. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec. Commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+                <div class="content" id="projects">
+                    <h2>Projects</h2>
+                </div>
+                <div class="content" id="mygithub">
+                    <h2>My Github</h2>
+                    <div class="calendar"></div>
+                    <div id="feed"></div>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="content" class="addresses">
+                    <div id="location" class="addresses-row">
+                        <img src="./assets/location.png" alt="Location" class="addresses-icons">
+                        <p>Maringá, Paraná - Brazil</p>
+                    </div>
+                    <div id="email" class="addresses-row">
+                        <img src="./assets/email.png" alt="E-mail" class="addresses-icons">
+                        <a href="mailto:hydeki8@gmail.com"><p>hydeki8@gmail.com</p></a>
+                    </div>
+                </div>
+                <div class="content" id="skills">
+                    <h2>Skills</h2>
+                </div>
+                <div class="content" id="education">
+                    <h2>Education</h2>
+                    <p>BSc Mechanical Engineering</p>
+                    <a href="http://www.uem.br/">State University of Maringá</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="projects"></div>
+    <script>
+        GitHubCalendar(".calendar", "MaykerHM");
+    
+        // or enable responsive functionality:
+        GitHubCalendar(".calendar", "MaykerHM", { responsive: true });
+    
+        // Use a proxy
+        GitHubCalendar(".calendar", "MaykerHM", {
+           proxy (MaykerHM) {
+             return fetch(`https://your-proxy.com/github?user=${MaykerHM}`)
+           }
+        }).then(r => r.text())
+    </script>
+</body>
+</html>
