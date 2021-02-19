@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-    <link rel="stylesheet" href="./styles/style.css">
     <!-- github calendar -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js" ></script>
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Mayker Miyanaga Portfolio</title>
 </head>
 <body>
@@ -18,9 +18,9 @@
             <img src="/assets/me.png" alt="Flutter Logo" class="avatar">
             <div class="developerInfo">
                 <h1 class="title">Mayker Miyanaga</h1>
-                <p class="subtitle">Flutter Developer</p>
+                <p class="subtitle">Desenvolvedor Web e Mobile</p>
                 <div class="socialMedia">
-                    <a href="https://twitter.com/MaykerMiyanaga" target="_blank"><img src="./assets/twitter.png" alt="Twitter" class="socialMedia-img"></a>
+                    <a href="https://twitter.com/MaykerMiyanaga" target="_blank"><img src="./assets/instagram.png" alt="Instagram" class="socialMedia-img"></a>
                     <a href="https://www.linkedin.com/in/maykerhm" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn" class="socialMedia-img"></a>
                     <a href="http://github.com/MaykerHM" target="_blank"><img src="./assets/github.png" alt="Github" class="socialMedia-img"></a>
                 </div>
@@ -31,53 +31,74 @@
         <div class="column0">
             <div class="column1">
                 <div class="content" id="aboutMe">
-                    <h2>About Me</h2>
-                    <p>With a mechanical engineering background, solving problems was one of my driving passions. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec. Commodo ligula eget dolor. Aenean massa.</p>
+                    <h1>Sobre</h1>
+                    <p>Sou estudante de Análise e Desenvolvimento de Sistemas. Atualmente trabalho como Agente Administrativo pela Prefeitura Municipal de Maringá.</p>
+                    <p> Estudo programação nas horas vagas e realizo projetos pessoais para obter experiência prática. Procuro sempre que possível, direcionar os meus projetos pessoais a resolver problemas encontrados no meu local de trabalho.</p>
                 </div>
                 <div class="content" id="projects">
-                    <h2>Projects</h2>
+                    <h1>Projetos</h1>
+                    
                 </div>
-                <div class="content" id="mygithub">
-                    <h2>My Github</h2>
-                    <div class="calendar"></div>
-                    <div id="feed"></div>
-                </div>
+                <a href="http://github.com/MaykerHM" target="blank">
+                    <div class="content" id="mygithub">
+                        <h1>Meu Github</h1>
+                        <div class="calendar"></div>
+                        <div id="feed"></div>
+                    </div>
+                </a>
             </div>
             <div class="column2">
-                <div class="content" class="addresses">
+                <div class="content addresses">
+                    <h1>Contato</h1>
                     <div id="location" class="addresses-row">
                         <img src="./assets/location.png" alt="Location" class="addresses-icons">
-                        <p>Maringá, Paraná - Brazil</p>
+                        <p>Maringá, Paraná</p>
                     </div>
                     <div id="email" class="addresses-row">
                         <img src="./assets/email.png" alt="E-mail" class="addresses-icons">
-                        <a href="mailto:hydeki8@gmail.com"><p>hydeki8@gmail.com</p></a>
+                        <a href="mailto:hydeki8@gmail.com" class="link-info" class="link"><p>hydeki8@gmail.com</p></a>
+                    </div>
+                    <div id="phone" class="addresses-row">
+                        <img src="./assets/whatsapp.png" alt="Phone Number - Whatsapp" class="addresses-icons">
+                        <a href="https://api.whatsapp.com/send?phone=5544991562112" class="link-info" target="blank">
+                            <p>(44) 99156-2112</p>
+                        </a>
                     </div>
                 </div>
                 <div class="content" id="skills">
-                    <h2>Skills</h2>
+                    <h1>Competências e habilidades</h1>
+                    <ul class="text">
+                        <h2>Forte em</h2>
+                        <li>HTML5, CSS3, SASS e Javascript.</li>
+                        <h2>Estudando</h2>
+                        <li>ReactJs, NodeJs e MongoDB.</li>
+                        <h2>Conhecimentos em</h2>
+                        <li>MySQL, Bootstrap, Python, Flutter e Dart.</li>
+                    </ul>
                 </div>
                 <div class="content" id="education">
-                    <h2>Education</h2>
-                    <p>BSc Mechanical Engineering</p>
-                    <a href="http://www.uem.br/">State University of Maringá</a>
+                    <h1>Perfil Acadêmico</h1>
+                    <div class="row">
+                        <img src="./assets/degree.png" alt="Degree">
+                        <h2>Análise e Desenvolvimento de Sistemas</h2>
+                    </div>
+                    <p>Centro Universitário Cidade Verde - UNIFCV (2020-2023)</p>
+                    <br/>
+                    <div class="row">
+                        <img src="./assets/degree.png" alt="Degree">
+                        <h2>Engenharia Mecânica</h2>
+                    </div>
+                    <p>Universidade Estadual de Maringá - UEM (2010-2017)</p>
                 </div>
             </div>
         </div>
     </main>
-    <div id="projects"></div>
+    <footer>
+        <p>Mayker H.M. &copy;</p>
+    </footer>
     <script>
-        GitHubCalendar(".calendar", "MaykerHM");
-    
-        // or enable responsive functionality:
         GitHubCalendar(".calendar", "MaykerHM", { responsive: true });
-    
-        // Use a proxy
-        GitHubCalendar(".calendar", "MaykerHM", {
-           proxy (MaykerHM) {
-             return fetch(`https://your-proxy.com/github?user=${MaykerHM}`)
-           }
-        }).then(r => r.text())
     </script>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
