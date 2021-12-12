@@ -1,8 +1,8 @@
 $primaryColor: #ffffff;
 $title: #49515a;
 $title-font: 'Montserrat', sans-serif;
-$title2: #545e69;
-$subtitle: #778492;
+$title2: #282b2e;
+$subtitle: #32373b;
 $subtitle-font: 'Lato', sans-serif;
 $green1: #58b36c;
 $green2: #63ce7a;
@@ -122,6 +122,7 @@ ul {
   &-img {
     border-radius: 5px;
     margin-right: 30px;
+    width: 252px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     transition-duration: 0.2s;
     &:hover {
